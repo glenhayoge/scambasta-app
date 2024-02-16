@@ -1,5 +1,5 @@
 ---
-
+import "../styles/pico.min.css";
 ---
 
 <html lang="en">
@@ -8,9 +8,49 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="stylesheet" href="../styles/pico.min.css" />
+		<title>ScamBasta</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		
+		<main class="container">
+			<nav>
+				<ul>
+				  <li><a href="#" class="secondary">...</a></li>
+				</ul>
+				<ul>
+				  <li><strong>ScamBasta</strong></li>
+				</ul>
+				<ul>
+				  <li><a href="#" class="secondary">...</a></li>
+				</ul>
+			  </nav>
+		<form>
+			<fieldset>
+			  <label>
+				First name
+				<input
+				  name="first_name"
+				  placeholder="First name"
+				  autocomplete="given-name"
+				/>
+			  </label>
+			  <label>
+				Email
+				<input
+				  type="email"
+				  name="email"
+				  placeholder="Email"
+				  autocomplete="email"
+				/>
+			  </label>
+			</fieldset>
+		  
+			<input
+			  type="submit"
+			  value="Subscribe"
+			/>
+		  </form>
+		</main>
 	</body>
 </html>
