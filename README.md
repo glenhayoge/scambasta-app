@@ -4,7 +4,7 @@
 
 ## Description
 
-A community driven platform to help stop online scams and protect people from becoming victims of scams, fraud, and crime in Papua New Guinea
+A community driven platform to help stop online scams and protect people from becoming victims of scams, fraud, and crime in Papua New Guinea.
 
 Link to the Live Website 🫱🏽 [scambasta](https://scambasta.netlify.app)
 
