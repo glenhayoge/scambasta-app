@@ -1,97 +1,179 @@
 ---
 import "../styles/pico.min.css";
+import "../styles/custom.css";
+// import "../js/minimal-theme-switcher.js";
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="../styles/pico.min.css" />
-		<title>ScamBasta</title>
-	</head>
-	<body>
-		
-		<main class="container">
-			<nav>
-				<ul>
-				  <li><a href="#" class="secondary">...</a></li>
-				</ul>
-				<ul>
-				  <li><strong>ScamBasta</strong></li>
-				</ul>
-				<ul>
-				  <li><a href="#" class="secondary">...</a></li>
-				</ul>
-			  </nav>
-			  <article>
-				<header>Header</header>
-				Body
-				<footer>Footer</footer>
-			  </article>
-			  <form>
-				<article>This is a test card</article>
-				<fieldset role="group">
-				  <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
-				  <input type="submit" value="Subscribe" />
-				</fieldset>
-			  </form>
-			  <!-- Primary -->
-<details>
-	<summary role="button">Accordion 1</summary>
-	<p>
-  Praesent quam ipsum, condimentum non augue at, porttitor interdum tellus. Curabitur ultrices consectetur leo, a placerat mauris malesuada et. In quis varius risus.
-   </p>
-  </details>
-  
-  <!-- Secondary -->
-  <details>
-	<summary role="button" class="secondary">Accordion 2</summary>
-	<p>
-  Praesent quam ipsum, condimentum non augue at, porttitor interdum tellus. Curabitur ultrices consectetur leo, a placerat mauris malesuada et. In quis varius risus.
-  </p>
-  </details>
-  
-  <!-- Contrast -->
-  <details>
-	<summary role="button" class="contrast">Accordion 3</summary>
-	<p>
-  Praesent quam ipsum, condimentum non augue at, porttitor interdum tellus. Curabitur ultrices consectetur leo, a placerat mauris malesuada et. In quis varius risus.
-  </p>
-  </details>
-			  <div class="grid">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-			  </div>
-		<form>
-			<fieldset>
-			  <label>
-				First name
-				<input
-				  name="first_name"
-				  placeholder="First name"
-				  autocomplete="given-name"
-				/>
-			  </label>
-			  <label>
-				Email
-				<input
-				  type="email"
-				  name="email"
-				  placeholder="Email"
-				  autocomplete="email"
-				/>
-			  </label>
-			</fieldset>
-		  
-			<input
-			  type="submit"
-			  value="Subscribe"
-			/>
-		  </form>
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scambasta • PNG </title>
+    <meta
+      name="description"
+      content="A classic company or blog layout with a sidebar. Built with Pico CSS."
+    />
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+    <!-- Custom styles for this example -->
+    <!-- <link rel="stylesheet" href="custom.css" /> -->
+  </head>
+
+  <body>
+    <!-- Hero -->
+    <div class="hero" data-theme="dark">
+      <nav class="container-fluid">
+        <ul>
+          <li>
+            <a href="./" class="contrast" onclick="event.preventDefault()"
+              ><strong>Scambasta</strong></a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <details role="list" dir="rtl">
+              <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+              <ul role="listbox">
+                <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                <li><a href="#" data-theme-switcher="light">Light</a></li>
+                <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <header class="container">
+        <hgroup>
+          <h1>Scambasta</h1>
+          <p>Helping you stop scams and protect people from becoming victims of scams, fraud, and crime</p>
+        </hgroup>
+        <p><a href="#" role="button" onclick="event.preventDefault()">Call to action</a></p>
+      </header>
+    </div>
+    <!-- ./ Hero -->
+
+    <!-- Main -->
+    <main class="container">
+      <div class="grid">
+        <section>
+          <hgroup>
+            <h2>Ut sit amet sem ut velit</h2>
+            <p>Quisque mi est</p>
+          </hgroup>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis est vel
+            velit bibendum ultrices. Sed aliquam tortor vel odio fermentum ullamcorper eu vitae
+            neque. Sed non diam at tellus venenatis viverra. Vestibulum et leo laoreet arcu tempor
+            eleifend venenatis ac leo. Pellentesque euismod justo sed nisl sollicitudin varius. Duis
+            venenatis nisl sit amet ante rutrum posuere. Etiam nec ullamcorper leo, sed placerat
+            mauris.
+          </p>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1698700654105-d4e75360dc99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5ODcyNTM3OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Architecture" />
+            <figcaption>
+              Image from
+              <a href="https://unsplash.com/photos/yxnfLh4exDo" target="_blank">unsplash.com</a>
+            </figcaption>
+          </figure>
+          <h3>Nulla augue metus</h3>
+          <p>
+            Pacilisis sed ante ut, posuere volutpat quam. Maecenas maximus blandit mi ac finibus.
+            Proin quis lacinia tellus. Aliquam erat volutpat. Aliquam erat volutpat. Phasellus
+            suscipit nisi augue, id accumsan tortor auctor ut. Duis odio arcu, egestas nec nulla
+            vel, fermentum bibendum ex.
+          </p>
+          <h3>Sed purus sapien, porta a cursus sed, maximus et metus.</h3>
+          <p>
+            Phasellus molestie ante sed massa bibendum, eget tempus ex sollicitudin. Vestibulum
+            libero nulla, porttitor nec faucibus et, scelerisque eget quam. Nullam finibus tempor
+            dui, vel congue urna condimentum ac. Fusce ultricies mauris justo, nec vulputate mauris
+            pulvinar eu. Sed tempus ligula lorem, at tincidunt risus mollis non. Quisque et turpis
+            sit amet sapien gravida ullamcorper in eu velit. Curabitur luctus ornare finibus. Proin
+            tempor nulla sagittis est fermentum dapibus. Vestibulum posuere mattis congue. Ut
+            porttitor id sem euismod tristique. Quisque mi est, posuere nec lorem eu, vulputate
+            vehicula diam. Nullam scelerisque, libero posuere efficitur bibendum, urna odio finibus
+            lorem, sed volutpat dolor ligula in dolor. Suspendisse suscipit efficitur neque, ut
+            porta tellus mollis vel. Nam consequat arcu ac tellus porta, nec egestas orci sodales.
+          </p>
+        </section>
+
+        <aside>
+          <a href="#" aria-label="Example" onclick="event.preventDefault()"
+            ><img src="https://images.unsplash.com/photo-1698700654105-d4e75360dc99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5ODcyNTM3OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Architecture"
+          /></a>
+          <p>
+            <a href="#" onclick="event.preventDefault()">Donec sit amet</a><br />
+            <small>Class aptent taciti sociosqu ad litora torquent per conubia nostra</small>
+          </p>
+          <a href="#" aria-label="Example" onclick="event.preventDefault()"
+            ><img src="https://images.unsplash.com/photo-1698700654105-d4e75360dc99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5ODcyNTM3OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Architecture"
+          /></a>
+          <p>
+            <a href="#" onclick="event.preventDefault()">Suspendisse potenti</a><br />
+            <small>Proin non condimentum tortor. Donec in feugiat sapien.</small>
+          </p>
+          <a href="#" aria-label="Example" onclick="event.preventDefault()"
+            ><img src="https://images.unsplash.com/photo-1698700654105-d4e75360dc99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5ODcyNTM3OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Architecture"
+          /></a>
+          <p>
+            <a href="#" onclick="event.preventDefault()">Nullam lobortis placerat aliquam</a><br />
+            <small
+              >Maecenas vitae nibh blandit dolor commodo egestas vel eget neque. Praesent semper
+              justo orci, vel imperdiet mi auctor in.</small
+            >
+          </p>
+        </aside>
+      </div>
+    </main>
+    <!-- ./ Main -->
+
+    <!-- Subscribe -->
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>Subscribe</h2>
+            <p>Litora torquent per conubia nostra</p>
+          </hgroup>
+          <form class="grid">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="First name"
+              aria-label="First name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+              aria-label="Email address"
+              required
+            />
+            <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!-- ./ Subscribe -->
+
+    <!-- Footer -->
+    <footer class="container">
+      <small
+        >Built by <a href="https://picocss.com">GlenH</a> •
+        <a href="https://github.com/glenhayoge/scambasta-app">Source code</a></small
+      >
+    </footer>
+    <!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+    <script src="../js/minimal-theme-switcher.js"></script>
+  </body>
 </html>
