@@ -10,7 +10,7 @@ Link to the Live Website 🫱🏽 [scambasta](https://scambasta.netlify.app)
 
 ## 🚀 Development Tools
 
-What this site was built with:
+What this site is built with:
 
 - Astro
 - PicoCSS for styling
